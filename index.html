@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ancrage | Embedded Operating Partner | AI Systems & Forward-Deployed Operators</title>
+<meta name="description" content="Ancrage is an embedded operating partner that combines AI workflow systems and forward-deployed operators to drive measurable outcomes for PE-backed and mid-market companies.">
+<meta name="keywords" content="Ancrage, ancrage.io, embedded operating partner, forward-deployed operators, AI workflow systems, operational performance, PE-backed companies, regulated industries, mid-market AI, change management, deal flow acceleration, embedded execution">
+<meta name="author" content="Ancrage Inc.">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="canonical" href="https://ancrage.io/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ancrage | Embedded Operating Partner with a Technical Edge">
+<meta property="og:description" content="AI systems and embedded operators that drive outcomes you can't get alone. Ancrage combines technology and forward-deployed execution for PE-backed and mid-market companies.">
+<meta property="og:url" content="https://ancrage.io/">
+<meta property="og:site_name" content="Ancrage">
+<meta property="og:locale" content="en_CA">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ancrage | Embedded Operating Partner with a Technical Edge">
+<meta name="twitter:description" content="AI systems and embedded operators that drive outcomes you can't get alone.">
+
+<!-- Structured Data: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Ancrage",
+  "legalName": "Ancrage Inc.",
+  "url": "https://ancrage.io",
+  "logo": "https://ancrage.io/logo.png",
+  "description": "Ancrage is a forward-deployed execution company. Our operators embed directly inside client organizations. We build and source AI workflow systems, enterprise-grade in scope and design, but sized and priced for mid-market realities.",
+  "foundingDate": "2026",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "Ontario",
+    "addressCountry": "CA"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "hello@ancrage.io",
+    "contactType": "sales"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/ancrage-io"
+  ],
+  "knowsAbout": [
+    "AI Workflow Systems",
+    "Forward-Deployed Operations",
+    "Embedded Execution",
+    "Change Management",
+    "Operational Performance",
+    "PE-Backed Companies",
+    "Regulated Industries",
+    "Mid-Market AI",
+    "Deal Flow Acceleration",
+    "Process Improvement"
+  ],
+  "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "minValue": 2,
+    "maxValue": 10
+  },
+  "founder": [
+    {
+      "@type": "Person",
+      "jobTitle": "Co-Founder"
+    }
+  ]
+}
+</script>
+
+<!-- Structured Data: WebSite (enables sitelinks search) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Ancrage",
+  "alternateName": ["Ancrage Inc.", "ancrage.io"],
+  "url": "https://ancrage.io"
+}
+</script>
+
+<!-- Structured Data: Service -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Embedded Operations and AI Consulting",
+  "provider": {
+    "@type": "Organization",
+    "name": "Ancrage"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Canada"
+  },
+  "description": "Ancrage provides embedded operators and AI workflow systems for PE-backed and mid-market companies in regulated industries. Forward-deployed execution with outcome-based economics.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Ancrage Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Forward-Deployed Operations",
+          "description": "Embedded operators who work inside your organization to drive change management and operational performance."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AI Workflow Systems",
+          "description": "Enterprise-grade AI systems sized for mid-market realities. Outbound intelligence, deal sourcing, contact enrichment, and automated outreach."
+        }
+      }
+    ]
+  }
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --teal: #00838F;
+    --teal-bright: #00BCD4;
+    --navy: #0B1D3A;
+    --ink: #0B1D3A;
+    --secondary: #4A5C6F;
+    --muted: #8899AA;
+    --border: #D8DFE7;
+    --border-light: #EDF1F5;
+    --page: #F7F9FB;
+    --white: #ffffff;
+    --font: 'Plus Jakarta Sans', sans-serif;
+    --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  html { font-family: var(--font); background: var(--white); color: var(--ink); -webkit-font-smoothing: antialiased; }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 48px;
+    background: rgba(255,255,255,0.92);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border-light);
+  }
+
+  .logo {
+    font-family: var(--font); font-weight: 700; font-size: 20px;
+    letter-spacing: 0.02em; color: var(--ink); text-decoration: none;
+    display: inline-flex; align-items: center; gap: 3px;
+    transition: transform 0.3s var(--ease);
+  }
+  .logo:hover { transform: translateX(6px); }
+  .logo-icon { transform: translateY(3px); flex-shrink: 0; }
+
+  .nav-links { display: flex; gap: 32px; align-items: center; }
+  .nav-links a:not(.btn-solid) {
+    font-size: 14px; font-weight: 400; color: var(--secondary);
+    text-decoration: none; transition: opacity 0.15s ease;
+  }
+  .nav-links a:not(.btn-solid):hover { opacity: 0.75; }
+
+  .btn-solid {
+    display: inline-flex; align-items: center; padding: 10px 22px;
+    border-radius: 100px; background: var(--teal); color: #fff;
+    font-size: 14px; font-weight: 500; font-family: var(--font);
+    text-decoration: none; border: none; cursor: pointer;
+    transition: opacity 0.15s ease, transform 0.1s ease;
+  }
+  .btn-solid:hover { opacity: 0.75; }
+  .btn-solid:active { transform: scale(0.97); }
+
+  .btn-ghost {
+    display: inline-flex; align-items: center;
+    font-size: 14px; font-weight: 400; color: var(--secondary);
+    font-family: var(--font); text-decoration: none;
+    transition: opacity 0.15s ease;
+  }
+  .btn-ghost:hover { opacity: 0.75; }
+
+  .btn-solid-inv {
+    display: inline-flex; align-items: center; padding: 10px 22px;
+    border-radius: 100px; background: var(--teal); color: #fff;
+    font-size: 14px; font-weight: 500; font-family: var(--font);
+    text-decoration: none; border: none; cursor: pointer;
+    transition: opacity 0.15s ease, transform 0.1s ease;
+  }
+  .btn-solid-inv:hover { opacity: 0.75; }
+
+  .btn-outline-inv {
+    display: inline-flex; align-items: center; padding: 10px 22px;
+    border-radius: 100px; background: transparent;
+    border: 1px solid rgba(255,255,255,0.15); color: rgba(255,255,255,0.6);
+    font-size: 14px; font-weight: 500; font-family: var(--font);
+    text-decoration: none; cursor: pointer;
+    transition: opacity 0.15s ease;
+  }
+  .btn-outline-inv:hover { opacity: 0.75; }
+
+  /* ── HERO ── */
+  .hero { padding: 180px 48px 120px; max-width: 1200px; margin: 0 auto; }
+
+  .hero h1 {
+    font-size: 48px; font-weight: 500; letter-spacing: -0.03em;
+    line-height: 1.1; margin-bottom: 20px; max-width: 680px;
+  }
+
+  .hero p {
+    font-size: 17px; color: var(--secondary); line-height: 1.6;
+    max-width: 480px; margin-bottom: 40px;
+  }
+
+  .hero-actions { display: flex; gap: 12px; align-items: center; }
+
+  /* ── SECTION ── */
+  section { padding: 100px 48px; }
+  .section-inner { max-width: 1200px; margin: 0 auto; }
+
+  .section-label {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.08em;
+    text-transform: uppercase; color: var(--muted);
+    margin-bottom: 32px; padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  /* ── THE PROBLEM (DARK) ── */
+  .problem {
+    background: var(--navy); color: var(--white);
+    position: relative; overflow: hidden;
+  }
+  .problem::before {
+    content: ''; position: absolute; top: -100px; right: -100px;
+    width: 400px; height: 400px;
+    background: radial-gradient(circle, rgba(0,131,143,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .problem .section-label { color: rgba(255,255,255,0.35); border-bottom-color: rgba(255,255,255,0.08); }
+
+  .problem-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;
+    position: relative; z-index: 1;
+  }
+
+  .problem h2 {
+    font-size: 28px; font-weight: 500; letter-spacing: -0.02em;
+    line-height: 1.2; margin-bottom: 20px;
+  }
+
+  .problem-points { display: grid; gap: 16px; }
+
+  .problem-point {
+    padding-left: 16px;
+    border-left: 1px solid rgba(255,255,255,0.1);
+    font-size: 15px; color: rgba(255,255,255,0.45); line-height: 1.55;
+  }
+
+  .problem-right {
+    font-size: 18px; font-weight: 400; line-height: 1.6;
+    color: rgba(255,255,255,0.6); letter-spacing: -0.01em;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-left: 3px solid var(--teal);
+    border-radius: 12px;
+    padding: 32px;
+  }
+
+  .problem-right strong { color: var(--white); font-weight: 500; }
+
+  /* ── HOW WE WORK ── */
+  .how { background: var(--page); }
+
+  .how-intro { margin-bottom: 48px; }
+  .how-intro h2 {
+    font-size: 28px; font-weight: 500; letter-spacing: -0.02em;
+    line-height: 1.2; margin-bottom: 8px;
+  }
+  .how-intro p { font-size: 15px; color: var(--secondary); line-height: 1.55; max-width: 480px; }
+
+  .how-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+
+  .how-card {
+    background: var(--white); border: 1px solid var(--border);
+    border-radius: 12px; padding: 28px 24px;
+  }
+
+  .how-step {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.06em;
+    text-transform: uppercase; color: var(--teal); margin-bottom: 16px;
+  }
+
+  .how-card h3 { font-size: 18px; font-weight: 500; margin-bottom: 8px; letter-spacing: -0.01em; }
+  .how-card p { font-size: 14px; color: var(--secondary); line-height: 1.55; }
+
+  /* ── CREDIBILITY ── */
+  .credibility { background: var(--white); }
+
+  .cred-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;
+  }
+
+  .cred-grid h2 {
+    font-size: 28px; font-weight: 500; letter-spacing: -0.02em;
+    line-height: 1.2; margin-bottom: 12px;
+  }
+
+  .cred-grid .sub {
+    font-size: 15px; color: var(--secondary); line-height: 1.55;
+    max-width: 400px; margin-bottom: 32px;
+  }
+
+  .cred-logos {
+    display: flex; gap: 28px; align-items: center; flex-wrap: wrap;
+  }
+
+  .cred-logo {
+    font-size: 15px; font-weight: 600; color: var(--ink);
+    opacity: 0.3; letter-spacing: 0.02em;
+  }
+
+  .cred-right { display: grid; gap: 12px; }
+
+  .cred-feature {
+    background: var(--page); border: 1px solid var(--border);
+    border-radius: 10px; padding: 20px;
+  }
+
+  .cred-feature h4 { font-size: 15px; font-weight: 500; margin-bottom: 4px; }
+  .cred-feature p { font-size: 13px; color: var(--muted); line-height: 1.5; }
+
+  .gambit-tag {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 11px; font-weight: 600; letter-spacing: 0.04em;
+    color: var(--teal); margin-top: 10px;
+  }
+  .gambit-tag::before {
+    content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--teal);
+  }
+
+  /* ── CTA (DARK) ── */
+  .cta { background: var(--navy); color: var(--white); }
+  .cta-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .cta h2 {
+    font-size: 28px; font-weight: 500; letter-spacing: -0.02em;
+    line-height: 1.2; margin-bottom: 8px;
+  }
+  .cta p { font-size: 15px; color: rgba(255,255,255,0.45); line-height: 1.55; max-width: 400px; }
+  .cta-actions { display: flex; gap: 12px; flex-shrink: 0; }
+
+  /* ── FOOTER ── */
+  footer { background: var(--navy); color: var(--white); padding: 0 48px 32px; }
+  .footer-inner { max-width: 1200px; margin: 0 auto; }
+  .footer-divider { border: none; border-top: 1px solid rgba(255,255,255,0.08); margin-bottom: 48px; }
+
+  .footer-top {
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 48px; padding-bottom: 32px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .footer-brand .logo { color: var(--white); font-size: 18px; }
+  .footer-brand p { font-size: 13px; line-height: 1.55; color: rgba(255,255,255,0.35); margin-top: 12px; max-width: 260px; }
+
+  .footer-col h4 {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.08em;
+    text-transform: uppercase; color: rgba(255,255,255,0.35); margin-bottom: 16px;
+  }
+  .footer-col a {
+    display: block; font-size: 13px; color: rgba(255,255,255,0.45);
+    text-decoration: none; margin-bottom: 10px; transition: opacity 0.15s ease;
+    outline: none;
+  }
+  .footer-col a:hover { opacity: 0.75; }
+
+  .footer-bottom { padding-top: 24px; display: flex; justify-content: space-between; align-items: center; }
+  .footer-bottom p { font-size: 12px; color: rgba(255,255,255,0.25); }
+  .footer-bottom a { font-size: 12px; color: rgba(255,255,255,0.25); text-decoration: none; margin-left: 20px; transition: opacity 0.15s ease; outline: none; }
+  .footer-bottom a:hover { opacity: 0.75; }
+
+  /* ── RESPONSIVE ── */
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    nav { padding: 16px 32px; }
+    .hero { padding: 140px 32px 80px; }
+    section { padding: 80px 32px; }
+    .hero h1 { font-size: 40px; }
+    .problem-grid, .cred-grid { gap: 48px; }
+    .how-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .footer-top { gap: 32px; }
+    footer { padding: 0 32px 32px; }
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    nav { padding: 14px 20px; }
+    .nav-links { display: none; }
+    .menu-toggle { display: flex; }
+
+    .mobile-menu {
+      display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+      background: var(--white); z-index: 200;
+      flex-direction: column; padding: 20px;
+    }
+    .mobile-menu.open { display: flex; }
+
+    .mobile-menu-header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 40px;
+    }
+
+    .mobile-menu-close {
+      width: 40px; height: 40px; border: 1px solid var(--border);
+      border-radius: 10px; background: transparent; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; color: var(--secondary);
+      transition: opacity 0.15s ease;
+    }
+    .mobile-menu-close:hover { opacity: 0.75; }
+
+    .mobile-menu-links { display: flex; flex-direction: column; gap: 0; }
+    .mobile-menu-links a {
+      font-size: 18px; font-weight: 500; color: var(--ink);
+      text-decoration: none; padding: 16px 0;
+      border-bottom: 1px solid var(--border-light);
+      transition: opacity 0.15s ease;
+    }
+    .mobile-menu-links a:hover { opacity: 0.75; }
+    .mobile-menu-links .btn-solid {
+      margin-top: 24px; text-align: center; justify-content: center;
+      padding: 14px 22px; font-size: 16px; border-bottom: none;
+      color: #fff;
+    }
+
+    .hero { padding: 120px 20px 64px; }
+    .hero h1 { font-size: 32px; max-width: 100%; }
+    .hero p { font-size: 16px; max-width: 100%; }
+    .hero-actions { flex-direction: column; align-items: flex-start; gap: 16px; }
+    .hero-actions .btn-solid { width: 100%; justify-content: center; padding: 14px 22px; }
+
+    section { padding: 64px 20px; }
+    .section-label { margin-bottom: 24px; }
+
+    .problem-grid { grid-template-columns: 1fr; gap: 32px; }
+    .problem h2 { font-size: 24px; }
+    .problem-right { font-size: 16px; padding: 24px; }
+
+    .how-intro h2 { font-size: 24px; }
+    .how-grid { grid-template-columns: 1fr; gap: 10px; }
+    .how-card { padding: 24px 20px; }
+
+    .cred-grid { grid-template-columns: 1fr; gap: 32px; }
+    .cred-grid h2 { font-size: 24px; }
+    .cred-grid .sub { max-width: 100%; }
+    .cred-logos { gap: 20px; }
+    .cred-logo { font-size: 14px; }
+
+    .cta-inner {
+      flex-direction: column; align-items: flex-start; gap: 24px;
+    }
+    .cta h2 { font-size: 24px; }
+    .cta-actions { width: 100%; }
+    .cta-actions .btn-solid-inv { width: 100%; justify-content: center; padding: 14px 22px; }
+
+    footer { padding: 0 20px 24px; }
+    .footer-top { grid-template-columns: 1fr; gap: 32px; }
+    .footer-brand p { max-width: 100%; }
+    .footer-bottom { flex-direction: column; gap: 12px; align-items: flex-start; }
+    .footer-bottom div { margin-left: 0; }
+    .footer-bottom a { margin-left: 0; margin-right: 16px; }
+  }
+
+  /* Small mobile */
+  @media (max-width: 400px) {
+    .hero h1 { font-size: 28px; }
+    .hero { padding: 110px 16px 56px; }
+    section { padding: 56px 16px; }
+    nav { padding: 12px 16px; }
+    footer { padding: 0 16px 20px; }
+  }
+
+  /* Menu toggle button */
+  .menu-toggle {
+    display: none; width: 40px; height: 40px;
+    border: 1px solid var(--border); border-radius: 10px;
+    background: transparent; cursor: pointer;
+    align-items: center; justify-content: center;
+    flex-direction: column; gap: 5px;
+    transition: opacity 0.15s ease;
+  }
+  .menu-toggle:hover { opacity: 0.75; }
+  .menu-toggle span {
+    display: block; width: 18px; height: 1.5px;
+    background: var(--secondary); border-radius: 1px;
+  }
+
+  .mobile-menu { display: none; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header>
+<nav aria-label="Main navigation">
+  <a href="https://ancrage.io" class="logo" title="Ancrage - Embedded Operating Partner">
+    <svg class="logo-icon" width="20" height="20" viewBox="0 0 34 34" fill="#00838F" aria-hidden="true"><path d="M4 17L30 4L22 17L30 30Z"/></svg>ancrage
+  </a>
+  <div class="nav-links">
+    <a href="#approach">Approach</a>
+    <a href="#how">How We Work</a>
+    <a href="#team">About</a>
+    <a href="/contact" class="btn-solid">Get in Touch</a>
+  </div>
+  <button class="menu-toggle" onclick="document.querySelector('.mobile-menu').classList.add('open')" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <div class="mobile-menu-header">
+    <a href="https://ancrage.io" class="logo" title="Ancrage">
+      <svg class="logo-icon" width="20" height="20" viewBox="0 0 34 34" fill="#00838F" aria-hidden="true"><path d="M4 17L30 4L22 17L30 30Z"/></svg>ancrage
+    </a>
+    <button class="mobile-menu-close" onclick="document.querySelector('.mobile-menu').classList.remove('open')" aria-label="Close menu">×</button>
+  </div>
+  <div class="mobile-menu-links">
+    <a href="#approach" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Approach</a>
+    <a href="#how" onclick="document.querySelector('.mobile-menu').classList.remove('open')">How We Work</a>
+    <a href="#team" onclick="document.querySelector('.mobile-menu').classList.remove('open')">About</a>
+    <a href="/contact" class="btn-solid" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Get in Touch</a>
+  </div>
+</div>
+
+<main>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>An embedded operating partner with a technical edge.</h1>
+  <p>Ancrage combines AI systems and embedded operators to accelerate deal flow and drive outcomes you can't get alone.</p>
+  <div class="hero-actions">
+    <a href="/contact" class="btn-solid">Get in Touch</a>
+    <a href="#approach" class="btn-ghost">Our approach →</a>
+  </div>
+</div>
+
+<!-- THE PROBLEM -->
+<section class="problem" id="approach">
+  <div class="section-inner">
+    <div class="section-label">The problem</div>
+    <div class="problem-grid">
+      <div>
+        <h2>Most transformations stall. The technology isn't the problem.</h2>
+        <div class="problem-points">
+          <div class="problem-point">Organizations chase AI tools before identifying the actual business problem.</div>
+          <div class="problem-point">Consultants deliver recommendations and leave. Vendors sell platforms but don't own the outcome.</div>
+        </div>
+      </div>
+      <div class="problem-right">
+        <strong>The hardest problems aren't solved by better data or smarter software.</strong> They're solved by someone who goes inside and orchestrates people, processes, and systems around a shared outcome.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW WE WORK -->
+<section class="how" id="how">
+  <div class="section-inner">
+    <div class="section-label">How we work</div>
+    <div class="how-intro">
+      <h2>Embedded operators. AI systems. Measurable outcomes.</h2>
+      <p>We sit inside your organization, build the systems you need, and stay until the results are real.</p>
+    </div>
+    <div class="how-grid">
+      <div class="how-card">
+        <div class="how-step">01 · Embed</div>
+        <h3>Forward-deployed operators</h3>
+        <p>Our team works inside your organization. Not above it. We understand the real constraints before we build anything.</p>
+      </div>
+      <div class="how-card">
+        <div class="how-step">02 · Build</div>
+        <h3>AI workflow systems</h3>
+        <p>Enterprise-grade in scope, sized for mid-market realities. Real workflows, not proof-of-concepts.</p>
+      </div>
+      <div class="how-card">
+        <div class="how-step">03 · Stay</div>
+        <h3>Until the results are measurable</h3>
+        <p>Our economics are tied to outcomes, not hours logged. If we don't move the needle, we don't get paid like we did.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDIBILITY -->
+<section class="credibility" id="team">
+  <div class="section-inner">
+    <div class="section-label">Why Ancrage</div>
+    <div class="cred-grid">
+      <div>
+        <h2>Operators who've built, scaled, and exited.</h2>
+        <p class="sub">20+ years across Shopify, BlackBerry, Ford, Intuit, and Oliver Wyman. We've built from scratch and founded our own ventures.</p>
+        <div class="cred-logos">
+          <span class="cred-logo">Shopify</span>
+          <span class="cred-logo">BlackBerry</span>
+          <span class="cred-logo" style="font-style:italic;">Ford</span>
+          <span class="cred-logo">Intuit</span>
+          <span class="cred-logo" style="font-weight:400;">Oliver Wyman</span>
+        </div>
+      </div>
+      <div class="cred-right">
+        <div class="cred-feature">
+          <h4>PE-backed and regulated industries</h4>
+          <p>Where the gap between intelligence and execution is widest, and closing it generates the most durable value.</p>
+        </div>
+        <div class="cred-feature">
+          <h4>Outcome-based economics</h4>
+          <p>Tied to results, not hours. Structured to win when you do. AI workflows powered by GambitOS.</p>
+          <div class="gambit-tag">Built on GambitOS</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <div class="cta-inner">
+    <div>
+      <h2>The gap between intelligence and execution is where we live.</h2>
+      <p>Tell us what you're trying to move.</p>
+    </div>
+    <div class="cta-actions">
+      <a href="/contact" class="btn-solid-inv">Get in Touch</a>
+      <a href="#approach" class="btn-outline-inv">Our approach</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <hr class="footer-divider">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="https://ancrage.io" class="logo" title="Ancrage">
+          <svg class="logo-icon" width="18" height="18" viewBox="0 0 34 34" fill="#00838F" aria-hidden="true"><path d="M4 17L30 4L22 17L30 30Z"/></svg>ancrage
+        </a>
+        <p>Ancrage is an embedded operating partner. AI systems and forward-deployed operators for PE-backed and mid-market companies.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="#approach">Approach</a>
+        <a href="#how">How We Work</a>
+        <a href="#team">About</a>
+      </div>
+      <div class="footer-col">
+        <h4>Focus</h4>
+        <a href="#team">PE-Backed Companies</a>
+        <a href="#team">Regulated Industries</a>
+        <a href="#how">Mid-Market AI</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="https://linkedin.com/company/ancrage-io" target="_blank">LinkedIn</a>
+        <a href="mailto:hello@ancrage.io">hello@ancrage.io</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Ancrage. All rights reserved.</p>
+      <div>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
