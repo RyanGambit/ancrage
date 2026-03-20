@@ -115,32 +115,44 @@
     max-width: 440px;
   }
 
-  .contact-cards { display: grid; gap: 12px; }
-
-  .contact-card {
-    background: var(--page); border: 1px solid var(--border);
-    border-radius: 12px; padding: 24px;
-    transition: opacity 0.15s ease;
-  }
-  .contact-card:hover { opacity: 0.85; }
-
-  .contact-label {
-    font-size: 11px; font-weight: 600; letter-spacing: 0.06em;
-    text-transform: uppercase; color: #D4A030; margin-bottom: 8px;
+  .contact-form {
+    display: flex; flex-direction: column; gap: 16px;
   }
 
-  .contact-value {
-    font-size: 17px; font-weight: 500; letter-spacing: -0.01em;
+  .form-field label {
+    display: block; font-size: 13px; font-weight: 500;
+    color: var(--secondary); margin-bottom: 6px;
   }
 
-  .contact-value a {
-    color: var(--ink); text-decoration: none;
-    transition: opacity 0.15s ease;
+  .form-field label .optional {
+    font-weight: 400; color: var(--muted);
   }
-  .contact-value a:hover { opacity: 0.75; }
 
-  .contact-note {
-    font-size: 13px; color: var(--muted); margin-top: 4px; line-height: 1.5;
+  .form-field input,
+  .form-field textarea {
+    width: 100%; font-family: var(--font); font-size: 15px;
+    color: var(--ink); background: var(--white);
+    border: 1px solid var(--border); border-radius: 12px;
+    padding: 12px 16px; outline: none;
+    transition: border-color 0.15s ease;
+  }
+
+  .form-field input:focus,
+  .form-field textarea:focus {
+    border-color: var(--teal);
+  }
+
+  .form-field textarea {
+    resize: vertical; min-height: 120px;
+  }
+
+  .form-submit {
+    margin-top: 8px;
+  }
+
+  .form-emails {
+    font-size: 14px; color: var(--muted); line-height: 1.7;
+    margin-top: 8px;
   }
 
   footer {
@@ -261,27 +273,35 @@
     <p class="intro">Tell us what you're trying to move. We'll tell you honestly whether we can help, and how.</p>
     <p class="trust">We work with a small number of clients at any given time. That's deliberate. If we take on your engagement, you get the senior team.</p>
   </div>
-  <div class="contact-cards">
-    <div class="contact-card">
-      <div class="contact-label">Email</div>
-      <div class="contact-value"><a href="mailto:hello@ancrage.io">hello@ancrage.io</a></div>
-      <div class="contact-note">We typically respond within 24 hours.</div>
+  <form class="contact-form" action="https://formspree.io/f/placeholder" method="POST">
+    <div class="form-field">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
     </div>
-    <div class="contact-card">
-      <div class="contact-label">Phone</div>
-      <div class="contact-value"><a href="tel:+14165550142">+1 (416) 555-0142</a></div>
-      <div class="contact-note">Monday to Friday, 9am to 6pm ET.</div>
+    <div class="form-field">
+      <label for="company">Company</label>
+      <input type="text" id="company" name="company" required>
     </div>
-    <div class="contact-card">
-      <div class="contact-label">Office</div>
-      <div class="contact-value">180 John Street, Suite 402</div>
-      <div class="contact-note">Toronto, Ontario M5T 1X5, Canada</div>
+    <div class="form-field">
+      <label for="role">Role</label>
+      <input type="text" id="role" name="role" required>
     </div>
-    <div class="contact-card">
-      <div class="contact-label">LinkedIn</div>
-      <div class="contact-value"><a href="https://linkedin.com/company/ancrage-io" target="_blank">linkedin.com/company/ancrage-io</a></div>
+    <div class="form-field">
+      <label for="problem">What are you trying to solve?</label>
+      <textarea id="problem" name="problem" required></textarea>
     </div>
-  </div>
+    <div class="form-field">
+      <label for="source">How did you find us? <span class="optional">(optional)</span></label>
+      <input type="text" id="source" name="source">
+    </div>
+    <div class="form-submit">
+      <button type="submit" class="btn-solid">Start the conversation</button>
+    </div>
+    <div class="form-emails">
+      hello@ancrage.io<br>
+      press@ancrage.io
+    </div>
+  </form>
 </div>
 </main>
 
