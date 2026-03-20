@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What it actually takes to build on truth | Ancrage Insights</title>
+<meta name="description" content="Most AI deployments fail not because the model is wrong. They fail because they were built on top of the organization's official version of itself.">
+<link rel="canonical" href="https://ancrage.io/insights/building-on-truth">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { --teal: #00838F; --navy: #0B1D3A; --ink: #0B1D3A; --secondary: #4A5C6F; --muted: #8899AA; --border-light: #EDF1F5; --white: #ffffff; --font: 'Plus Jakarta Sans', sans-serif; --ease: cubic-bezier(0.16, 1, 0.3, 1); }
+  html { font-family: var(--font); background: var(--white); color: var(--ink); -webkit-font-smoothing: antialiased; }
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; padding: 16px 48px; background: rgba(255,255,255,0.92); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border-light); }
+  .logo { font-weight: 700; font-size: 20px; letter-spacing: 0.02em; color: var(--ink); text-decoration: none; display: inline-flex; align-items: center; gap: 3px; transition: transform 0.3s var(--ease); }
+  .logo:hover { transform: translateX(6px); }
+  .logo-icon { transform: translateY(3px); }
+  .content { max-width: 680px; margin: 0 auto; padding: 140px 32px 100px; }
+  .back { font-size: 13px; color: var(--muted); text-decoration: none; display: inline-block; margin-bottom: 32px; }
+  .back:hover { opacity: 0.75; }
+  .meta { font-size: 13px; color: var(--muted); margin-bottom: 32px; }
+  h1 { font-size: 32px; font-weight: 500; letter-spacing: -0.02em; line-height: 1.2; margin-bottom: 12px; }
+  h2 { font-size: 20px; font-weight: 500; margin-top: 40px; margin-bottom: 12px; }
+  p { font-size: 16px; color: var(--secondary); line-height: 1.75; margin-bottom: 20px; }
+  footer { background: var(--navy); color: var(--white); padding: 32px 48px; text-align: center; }
+  footer p { font-size: 12px; color: rgba(255,255,255,0.25); margin: 0; }
+  footer a { color: rgba(255,255,255,0.25); text-decoration: none; margin: 0 10px; outline: none; }
+  @media (max-width: 768px) { nav { padding: 14px 20px; } .content { padding: 100px 20px 60px; } h1 { font-size: 26px; } footer { padding: 24px 20px; } }
+</style>
+</head>
+<body>
+<nav><a href="/" class="logo"><svg class="logo-icon" width="20" height="20" viewBox="0 0 34 34" fill="#00838F" aria-hidden="true"><path d="M4 17L30 4L22 17L30 30Z"/></svg>ancrage</a></nav>
+<div class="content">
+  <a href="/#insights" class="back">← Back to insights</a>
+  <h1>What it actually takes to build on truth</h1>
+  <div class="meta">Chris Silivestru · 4 min read · March 2026</div>
+  <p>There is a pattern we have seen consistently across AI deployments in mid-market organizations. The technology is sound. The use case is real. The business case is credible. And it still fails.</p>
+  <p>Not dramatically. It simply never reaches production. Or it reaches production and gets quietly routed around. Or it works perfectly in a demo environment and produces garbage in the real one.</p>
+  <p>The cause, almost every time, is the same: the deployment was built on top of a broken understanding of the organization itself.</p>
+  <h2>The gap between official and real</h2>
+  <p>Every organization has two versions of itself. The official version lives in process maps, org charts, and job descriptions. The real version lives in the heads of the people who have been there long enough to know which data is actually trustworthy, which approval process is real versus ceremonial, which system of record is actually used versus which one is supposed to be used.</p>
+  <p>Most AI implementations are built against the official version. They ingest the documented processes, model the stated workflows, and optimize for the metrics that appear on dashboards. Then they hit the real organization and stall.</p>
+  <p>This is why "get your data in order" is correct advice but insufficient. Data quality is a symptom. The root cause is that the organization has never built an explicit, shared understanding of its own concepts, their definitions, their relationships, and their sources of truth. That is what we call the organizational ontology. It is the foundation on which everything else is built.</p>
+  <h2>What building on truth looks like</h2>
+  <p>When we map an organization's ontology, we are answering questions most organizations have never explicitly addressed. What is a "deal" in your system, and at what stage does an opportunity become one? What counts as "on time" in your logistics network: departure or delivery? Who owns a customer relationship when it spans multiple business units? Which system wins when your CRM and your ERP disagree?</p>
+  <p>These questions seem mundane. They are not. Every one of them represents a place where an AI system built without the answer will produce outputs that are technically correct and operationally meaningless. Or worse, confidently wrong.</p>
+  <p>The process of answering them is also where the real organizational intelligence lives. The people who know the answers are almost never the people who commissioned the AI project. They are the people who have been doing the actual work for years. Getting them in the room, and building a system that reflects what they know, is the difference between a deployment that transforms operations and one that sits unused after the launch event.</p>
+  <h2>Why this is the foundation, not the preamble</h2>
+  <p>Organizational mapping is not a preparatory step before the real work begins. It is the most important work. Every subsequent decision, which systems to build, which workflows to redesign, which data to trust, which metrics to optimize for, depends on getting this right.</p>
+  <p>At Ancrage, we spend two to four weeks on this before we write a line of code or select a platform. It is unglamorous work. It does not produce a demo. It produces the foundation on which every subsequent decision is made correctly.</p>
+  <p>We have never seen an organization that regretted taking the time to do it right. We have seen many that regretted skipping it.</p>
+</div>
+<footer><p>&copy; 2026 Ancrage. All rights reserved. <a href="/privacy">Privacy</a> <a href="/terms">Terms</a></p></footer>
+</body>
+</html>
